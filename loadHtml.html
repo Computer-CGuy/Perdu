@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript">
+    fetch("./index.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+  </script>
+</head>
+<body>
+
+<header></header>
+
+</body>
+</html>
